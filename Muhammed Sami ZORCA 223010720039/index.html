@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sami's Website Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Sami's Website</h1>
+    <p>Çoğu bilgiye hızlı ve kolay bir şekilde erişebilmeniz için kurulmuştur.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showContent('about')">Hakkında</a></li>
+      <li><a href="#" onclick="showContent('categories')">Kategoriler</a></li>
+      <li><a href="#" onclick="showContent('contact')">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <main id="mainContent">
+    <section id="about" class="content">
+      <h2>Hakkında</h2>
+      <p>Bu site, çeşitli konularda bilgi edinmeyi kolaylaştırmak için oluşturulmuştur. Kullanıcılar, farklı kategoriler arasından seçim yaparak ilgili konularda bilgilere hızlıca ulaşabilirler.</p>
+      <img src="images/mainpage.jpg" alt="Ana Sayfa Fotoğrafı" style="max-width: 50%; height: auto;">
+    </section>
+
+    <section id="categories" class="content hidden">
+      <h2>Kategoriler</h2>
+      <ul>
+        <li><a href="fizik.html">Fizik</a></li>
+        <li><a href="biyoloji.html">Biyoloji</a></li>
+        <li><a href="tarih.html">Tarih</a></li>
+      </ul>
+    </section>
+
+    <section id="contact" class="content hidden">
+      <h2>İletişim</h2>
+
+
+<div style="display: flex; align-items: flex-start; gap: 20px;">
+        <div>
+          <form id="contactForm">
+            <label for="name">İsim:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">E-posta:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Mesajınız:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <button type="submit">Gönder</button>
+          </form>
+        </div>
+        
+        <!-- Burada fotoğrafı ekliyoruz -->
+        <div>
+          <img src="images/İLETİŞİM BİLGİLERİ.jpg" alt="İletişim Fotoğrafı" style="max-width: 50%; height: auto;">
+        </div>
+      </div>
+      
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
